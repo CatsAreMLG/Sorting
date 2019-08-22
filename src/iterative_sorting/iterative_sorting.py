@@ -40,9 +40,9 @@ def bubble_sort(arr):
 # # STRETCH: implement the Count Sort function below
 
 
-def count_sort(arr, maximum=-1):
+def count_sort(arr):
     if arr:
-        occurences = [0] * (max(arr)+1)
+        occurences = [0] * (max(arr) + 1)
         newArr = [0] * len(arr)
         for num in arr:
             if num < 0:
